@@ -1,0 +1,10 @@
+options +followsymlinks
+indexignore */*
+rewriteengine on
+
+# if a directory or a file exists, use it directly
+rewritecond %{request_filename} !-f
+rewritecond %{request_filename} !-d
+
+# otherwise forward it to index.php
+rewriterule . index.php
