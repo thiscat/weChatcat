@@ -1,0 +1,44 @@
+2016/03/23 07:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\xampp\htdocs\WeChat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\WeChat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://fzttxcgnot.proxy.qqbrowser.cc/
+---
+2016/03/23 07:44:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\xampp\htdocs\WeChat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\WeChat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://fzttxcgnot.proxy.qqbrowser.cc/
+---
+2016/03/23 07:44:22 [error] [php] Undefined index: HTTP_RAW_POST_DATA (C:\xampp\htdocs\WeChat\protected\controllers\WechatController.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\WeChat\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\WeChat\framework\web\CController.php(286): WechatController->runAction()
+#2 C:\xampp\htdocs\WeChat\framework\web\CController.php(265): WechatController->runActionWithFilters()
+#3 C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php(282): WechatController->run()
+#4 C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\WeChat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\WeChat\index.php(10): CWebApplication->run()
+REQUEST_URI=/wechat
+in C:\xampp\htdocs\WeChat\protected\controllers\WechatController.php (17)
+in C:\xampp\htdocs\WeChat\protected\controllers\WechatController.php (10)
+in C:\xampp\htdocs\WeChat\index.php (10)
+2016/03/23 07:45:25 [error] [php] Undefined index: HTTP_RAW_POST_DATA (C:\xampp\htdocs\WeChat\protected\controllers\WechatController.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\WeChat\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\WeChat\framework\web\CController.php(286): WechatController->runAction()
+#2 C:\xampp\htdocs\WeChat\framework\web\CController.php(265): WechatController->runActionWithFilters()
+#3 C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php(282): WechatController->run()
+#4 C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\WeChat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\WeChat\index.php(10): CWebApplication->run()
+REQUEST_URI=/wechat
+in C:\xampp\htdocs\WeChat\protected\controllers\WechatController.php (17)
+in C:\xampp\htdocs\WeChat\protected\controllers\WechatController.php (10)
+in C:\xampp\htdocs\WeChat\index.php (10)
