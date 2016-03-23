@@ -25,6 +25,7 @@ class WechatController extends Controller
 					break;
 				case "text":
 					$this->receiveText($postObj);
+					break;
 			}
 		}else{
 			echo "没有接收到数据";
