@@ -14,7 +14,7 @@ class WechatController extends Controller
 	//回复信息
 	public function responseMsg()
 	{
-		$postStr = $GLOBALS["HTTP_RAM_POST_DATA"];
+		$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
 		if(!empty($postStr)){
 			$postObj = simplexml_load_string($postStr,'SimpleXMLElement',LIBXML_NOCDATA);
 			$toUsername = $postObj->ToUserName;
