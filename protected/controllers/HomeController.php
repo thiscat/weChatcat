@@ -7,6 +7,11 @@ class HomeController extends Controller
 		$this->render('index');
 	}
 
+    public function actionArticle()
+	{
+		$this->render('article');
+	}
+
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

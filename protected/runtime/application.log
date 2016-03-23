@@ -42,3 +42,1317 @@ REQUEST_URI=/wechat
 in C:\xampp\htdocs\WeChat\protected\controllers\WechatController.php (17)
 in C:\xampp\htdocs\WeChat\protected\controllers\WechatController.php (10)
 in C:\xampp\htdocs\WeChat\index.php (10)
+2016/03/23 23:03:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:03:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:03:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:03:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:03:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:03:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:06:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:13:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:13:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:13:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:16:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:16:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:16:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:24:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:24:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:24:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/css/main.css
+---
+2016/03/23 23:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:32:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:32:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:32:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:32:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:32:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:32:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/main.js".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/main.js')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/main.js
+HTTP_REFERER=http://localhost/wechat/home
+---
+2016/03/23 23:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/main.js".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/main.js')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/main.js
+HTTP_REFERER=http://localhost/wechat/home
+---
+2016/03/23 23:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:34:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:37:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:37:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:37:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:37:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:37:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:37:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:42:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:42:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:42:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:43:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:43:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:43:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:44:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:52:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:52:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:52:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:53:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:53:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:53:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/23 23:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:01:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:01:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:01:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:05:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:05:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:05:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff2".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.woff".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
+2016/03/24 00:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/fonts/fontawesome-webfont.ttf".' in D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\phpStudy\WWW\wechat\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/fonts/fo...')
+#1 D:\phpStudy\WWW\wechat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\phpStudy\WWW\wechat\index.php(10): CApplication->run()
+#3 {main}
+REQUEST_URI=/wechat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/wechat/assets/css/main.css
+---
