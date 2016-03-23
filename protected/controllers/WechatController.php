@@ -4,7 +4,11 @@ class WechatController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		if(isset($_GET["echostr"])){
+			$this->valid();
+		}else{
+			$this->responseMsg();
+		}
 	}
 
 	//回复信息
@@ -37,17 +41,18 @@ class WechatController extends Controller
 	}
 
 	//微信基本配置验证
-	public function actionValid()
+	public function valid()
 	{
 		$echoStr = $_GET["echostr"];
+
 		//valid signature , option
-		if($this->actionCheckSignature()){
+		if($this->checkSignature()){
 			echo $echoStr;
 			exit;
 		}
 	}
 
-	public function actionCheckSignature()
+	public function checkSignature()
 	{
 		// you must define TOKEN by yourself
 		$signature = $_GET["signature"];
