@@ -2,6 +2,10 @@
 
 class WechatController extends Controller
 {
+	private $appid = "wxf13635d0906784cc";
+	private $appsecret = "3ea52e86c92d67a0968cd42b5067f596 ";
+	private $access_token;
+
 	public function actionIndex()
 	{
 		if(isset($_GET["echostr"])){
@@ -9,6 +13,10 @@ class WechatController extends Controller
 		}else{
 			$this->responseMsg();
 		}
+	}
+
+	public function init(){
+		$this->getAccessToken();
 	}
 
 	//回复信息
@@ -43,8 +51,69 @@ class WechatController extends Controller
 			case "subscribe":
 				$content = "关注信息";
 				break;
+			case "LOCATION":
+
 		}
 		$this->transmit($postObj,$content);
+	}
+
+	public function actionCreateMenu()
+	{
+		$jsonMenu = '{
+					"button": [
+						{
+							"name": "菜单",
+							"sub_button": [
+								{
+									"type": "click",
+									"name": "电影",
+									"key": "movie",
+								},
+							]
+						},
+						{
+							"name": "附属菜单",
+							"sub_button": [
+								{
+									"type": "pic_sysphoto",
+									"name": "系统拍照发图",
+									"key": "sysphoto",
+								   "sub_button": [ ]
+								 },
+								{
+									"type": "pic_photo_or_album",
+									"name": "拍照或者相册发图",
+									"key": "photo_or_album",
+									"sub_button": [ ]
+								},
+								{
+									"type": "pic_weixin",
+									"name": "微信相册发图",
+									"key": "pic_weixin",
+									"sub_button": [ ]
+								}
+							]
+						},
+						{
+							"name": "发送位置",
+							"type": "location_select",
+							"key": "location"
+						},
+						{
+						   "type": "media_id",
+						   "name": "图片",
+						   "media_id": "media"
+						},
+						{
+						   "type": "view_limited",
+						   "name": "图文消息",
+						   "media_id": "view"
+						}
+					]
+				}';
+		$post_url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token={$this->access_token}";
+		$result = $this->curl_post($post_url,$jsonMenu);
+		var_dump($result);
 	}
 
 	/**
@@ -83,11 +152,36 @@ class WechatController extends Controller
 		echo $resultStr;
 	}
 
+	/**
+	 * 获取access_token
+	 */
+	public function getAccessToken()
+	{
+		$tokenArr = Yii::app()->session['tokenArr'];
+		if(empty($tokenArr)){
+			$command = Yii::app()->db->createCommand();
+			$tokenArr = $command->select('access_token,expires_in')->from('accesstoken')->queryRow();
+			Yii::app()->session['tokenArr'] = $tokenArr;
+		}
+
+		if(!empty($tokenArr['access_token']) && time() - $tokenArr['expires_in'] < 7200){
+			$this->access_token = $tokenArr['access_token'];
+		}else{
+			$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$this->appid}&secret={$this->appsecret}";
+			$json = $this->curl_post($url);
+			$tokenArr = json_decode($json,true);
+			$this->access_token = $tokenArr['access_token'];
+			$tokenArr['expires_in'] = time();
+
+			Yii::app()->session['tokenArr'] = $tokenArr;
+			$command->insert('accesstoken',array('access_token'=>$tokenArr['access_token'],'expires_in'=>$tokenArr['expires_in']));
+		}
+	}
+
 	//微信基本配置验证
 	public function valid()
 	{
 		$echoStr = $_GET["echostr"];
-
 		//valid signature , option
 		if($this->checkSignature()){
 			echo $echoStr;
@@ -114,5 +208,26 @@ class WechatController extends Controller
 		}else{
 			return false;
 		}
+	}
+
+	/**
+	 * curl
+	 * @string $url
+	 * @param null $data
+	 * @return mixed
+	 */
+	function curl_post($url,$data = null){
+		$curl = curl_init();
+		curl_setopt($curl, CURLOPT_URL, $url);
+		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, FALSE);
+		curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, FALSE);
+		if (!empty($data)){
+			curl_setopt($curl, CURLOPT_POST, 1);
+			curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+		}
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+		$result = curl_exec($curl);
+		curl_close($curl);
+		return $result;
 	}
 }
