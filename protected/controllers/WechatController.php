@@ -15,6 +15,11 @@ class WechatController extends Controller
 		}
 	}
 
+	public function init()
+	{
+		$this->getAccessToken();
+	}
+
 	//回复信息
 	public function responseMsg()
 	{
