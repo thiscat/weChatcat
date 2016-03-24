@@ -53,7 +53,14 @@ class WechatController extends Controller
 				$content = "关注信息";
 				break;
 			case "LOCATION":
-
+				$content = "本地信息";
+				break;
+			case "CLICK":
+				$content = "请输入关键词";
+				break;
+			case "location_select":
+				$content = $postObj->Label;
+				break;
 		}
 		$this->transmit($postObj, $content);
 	}
@@ -72,57 +79,49 @@ class WechatController extends Controller
 	public function actionCreateMenu()
 	{
 		$jsonMenu = '{
-					"button": [
-						{
-							"name": "菜单",
-							"sub_button": [
-								{
-									"type": "click",
-									"name": "电影",
-									"key": "movie",
-								},
+					  "button":[
+					  {
+							"name":"菜单",
+						   "sub_button":[
+							{
+							   "type": "click",
+								"name": "电影",
+								"key": "movie",
+							},
+							{
+								"type":"view",
+								"name":"首页",
+								"url":"http://cat-wechat.coding.io/home/index"
+							},
+							{
+								"name": "发送位置",
+								"type": "location_select",
+								"key": "location"
+							}
 							]
-						},
-						{
-							"name": "附属菜单",
+					   },
+					   {
+						   "name": "附属菜单",
 							"sub_button": [
 								{
 									"type": "pic_sysphoto",
 									"name": "系统拍照发图",
 									"key": "sysphoto",
-								   "sub_button": [ ]
 								 },
 								{
 									"type": "pic_photo_or_album",
 									"name": "拍照或者相册发图",
 									"key": "photo_or_album",
-									"sub_button": [ ]
 								},
 								{
 									"type": "pic_weixin",
 									"name": "微信相册发图",
 									"key": "pic_weixin",
-									"sub_button": [ ]
 								}
 							]
-						},
-						{
-							"name": "发送位置",
-							"type": "location_select",
-							"key": "location"
-						},
-						{
-						   "type": "media_id",
-						   "name": "图片",
-						   "media_id": "media"
-						},
-						{
-						   "type": "view_limited",
-						   "name": "图文消息",
-						   "media_id": "view"
 						}
-					]
-				}';
+					 ]
+				 }';
 		$post_url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token={$this->access_token}";
 		$result = $this->curl_post($post_url,$jsonMenu);
 		var_dump($result);
@@ -135,8 +134,9 @@ class WechatController extends Controller
 	public function receiveText($postObj)
 	{
 		$keyword = trim($postObj->Content);
-		if($keyword == "?" || $keyword == "？"){
-			$content = "当前时间".date('Y-m-d H:i:s',time());
+		if($keyword){
+			//$content = "当前时间".date('Y-m-d H:i:s',time());
+			$content = $this->actionMovie($keyword);
 			$this->transmit($postObj,$content);
 		}
 	}
