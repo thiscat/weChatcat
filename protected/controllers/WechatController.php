@@ -188,6 +188,15 @@ class WechatController extends Controller
 		}
 	}
 
+	public function actionOauth()
+	{
+		if (isset($_GET['code'])){
+			echo $_GET['code'];
+		}else{
+			echo "NO CODE";
+		}
+	}
+
 	//微信基本配置验证
 	public function valid()
 	{
