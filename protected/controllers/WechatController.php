@@ -8,26 +8,22 @@ class WechatController extends Controller
 
 	public function actionIndex()
 	{
-		if(isset($_GET["echostr"])){
+		if (isset($_GET["echostr"])) {
 			$this->valid();
-		}else{
+		} else {
 			$this->responseMsg();
 		}
-	}
-
-	public function init(){
-		$this->getAccessToken();
 	}
 
 	//回复信息
 	public function responseMsg()
 	{
 		$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
-		if(!empty($postStr)){
-			$postObj = simplexml_load_string($postStr,'SimpleXMLElement',LIBXML_NOCDATA);
+		if (!empty($postStr)) {
+			$postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
 			$msgType = trim($postObj->MsgType);
 
-			switch($msgType){
+			switch ($msgType) {
 				case "event":
 					$this->receiveEvent($postObj);
 					break;
@@ -35,7 +31,7 @@ class WechatController extends Controller
 					$this->receiveText($postObj);
 					break;
 			}
-		}else{
+		} else {
 			echo "没有接收到数据";
 			exit;
 		}
@@ -47,14 +43,25 @@ class WechatController extends Controller
 	 */
 	public function receiveEvent($postObj)
 	{
-		switch($postObj->Event){
+		switch ($postObj->Event) {
 			case "subscribe":
 				$content = "关注信息";
 				break;
 			case "LOCATION":
 
 		}
-		$this->transmit($postObj,$content);
+		$this->transmit($postObj, $content);
+	}
+
+	public function actionMovie($keyword="功夫熊猫")
+	{
+		$url = "http://www.diediao.com/search-wd-{$keyword}.html";
+		$result = $this->curl_post($url);
+		$result = preg_replace("'<script(.*?)</script>'is","",$result);//去除js文件
+		$reg = array("　","\t","\n","\r");
+		$result = str_replace($reg, '', $result);
+		preg_match('#<ul class="show-list" id="contents">.*?</ul>#',$result,$showList);
+		var_dump($showList[0]);
 	}
 
 	public function actionCreateMenu()
@@ -159,22 +166,20 @@ class WechatController extends Controller
 	{
 		$tokenArr = Yii::app()->session['tokenArr'];
 		if(empty($tokenArr)){
-			$command = Yii::app()->db->createCommand();
-			$tokenArr = $command->select('access_token,expires_in')->from('accesstoken')->queryRow();
-			Yii::app()->session['tokenArr'] = $tokenArr;
+			$tokenArr = json_decode(file_get_contents('access_token.txt'),true);
 		}
 
-		if(!empty($tokenArr['access_token']) && time() - $tokenArr['expires_in'] < 7200){
+		if(!empty($tokenArr['access_token']) && time() < $tokenArr['expires_in']){
 			$this->access_token = $tokenArr['access_token'];
 		}else{
 			$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$this->appid}&secret={$this->appsecret}";
 			$json = $this->curl_post($url);
 			$tokenArr = json_decode($json,true);
 			$this->access_token = $tokenArr['access_token'];
-			$tokenArr['expires_in'] = time();
+			$tokenArr['expires_in'] = time() + 7200;
 
 			Yii::app()->session['tokenArr'] = $tokenArr;
-			$command->insert('accesstoken',array('access_token'=>$tokenArr['access_token'],'expires_in'=>$tokenArr['expires_in']));
+			file_put_contents('access_token.txt',json_encode($tokenArr));
 		}
 	}
 
