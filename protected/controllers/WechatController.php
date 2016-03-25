@@ -62,7 +62,7 @@ class WechatController extends Controller
 				$content = $postObj->Label;
 				break;
 		}
-		$this->transmit($postObj, $content);
+		$this->transmitText($postObj, $content);
 	}
 
 	public function actionMovie($keyword="功夫熊猫")
@@ -134,24 +134,33 @@ class WechatController extends Controller
 	public function receiveText($postObj)
 	{
 		$keyword = trim($postObj->Content);
-		if($keyword == "测试"){
-			//$content = "当前时间".date('Y-m-d H:i:s',time());
-			//$content = $this->actionMovie($keyword);
-			$content = "\n\n回复<a href=\"http://www.baidu.com/\">百度</a>或回复“搜索” 了解详情\n其他文字";
-			$this->transmit($postObj,$content);
-		}else{
+		if(strstr($keyword,"搜索")){
+			$content = '\n\n回复<a href=\"http://www.baidu.com/\">百度</a>或回复“搜索” 了解详情\n其他文字';
+		}else if(strstr($keyword,"测试")){
 			$content = "\n\n回复“搜索” 了解详情\n其他文字";
-			$this->transmit($postObj,$content);
+		}else{
+			$content = array();
+			$content[] = array( "Title"=>"单图文",
+								 "Description"=>"单图文内容",
+								 "PicUrl"=>"http://tu8.diediao.com/Uploads/vod/2015-03-07/54fadab893e69.jpg",
+								 "Url" =>"http://www.diediao.com/Animation/gongfuxiongmiao3/");
+		}
+
+		if(is_array($content)){
+			if(isset($content[0][PicUrl])){
+				$this->transmitNews($postObj,$content);
+			}
+		}else{
+			$this->transmitText($postObj,$content);
 		}
 	}
 
 	/**
-	 * 被动发送信息
+	 * 文本信息
 	 * @object $postObj 接收信息 对象形式
 	 * @string $content 发送信息的内容
-	 * @string string $msgType 信息类型，默认文本信息
 	 */
-	public function transmit($postObj,$content,$msgType = "text")
+	public function transmitText($postObj,$content)
 	{
 		$toUsername = $postObj->ToUserName;
 		$fromUserName = $postObj->FromUserName;
@@ -160,38 +169,51 @@ class WechatController extends Controller
 					<ToUserName><![CDATA[%s]]></ToUserName>
 					<FromUserName><![CDATA[%s]]></FromUserName>
 					<CreateTime>%s</CreateTime>
-					<MsgType><![CDATA[%s]]></MsgType>
+					<MsgType><![CDATA[text]]></MsgType>
 					<Content><![CDATA[%s]]></Content>
 					</xml>";
 
-		$resultStr = sprintf($textTpl,$fromUserName,$toUsername,$createTime,$msgType,$content);
+		$resultStr = sprintf($textTpl,$fromUserName,$toUsername,$createTime,$content);
 		echo $resultStr;
 	}
 
-//	public function transmitImg()
-//	{
-//		$tpl = "<xml>
-//				<ToUserName><![CDATA[toUser]]></ToUserName>
-//				<FromUserName><![CDATA[fromUser]]></FromUserName>
-//				<CreateTime>12345678</CreateTime>
-//				<MsgType><![CDATA[news]]></MsgType>
-//				<ArticleCount>2</ArticleCount>
-//				<Articles>
-//				<item>
-//				<Title><![CDATA[title1]]></Title>
-//				<Description><![CDATA[description1]]></Description>
-//				<PicUrl><![CDATA[picurl]]></PicUrl>
-//				<Url><![CDATA[url]]></Url>
-//				</item>
-//				<item>
-//				<Title><![CDATA[title]]></Title>
-//				<Description><![CDATA[description]]></Description>
-//				<PicUrl><![CDATA[picurl]]></PicUrl>
-//				<Url><![CDATA[url]]></Url>
-//				</item>
-//				</Articles>
-//				</xml> ";
-//	}
+	/**
+	 * 发送图文信息
+	 * @param $postObj
+	 * @param $newsArray
+	 * @return string
+	 */
+	public function transmitNews($postObj,$newsArray)
+	{
+		if(is_array($newsArray)){
+			return "";
+		}
+		$itemTpl = "    <item>
+						<Title><![CDATA[%s]]></Title>
+						<Description><![CDATA[%s]]></Description>
+						<PicUrl><![CDATA[%s]]></PicUrl>
+						<Url><![CDATA[%s]]></Url>
+						</item>";
+
+		$itemStr = "";
+		foreach($newsArray as $item){
+			$itemStr .= sprintf($itemTpl,$item['Title'],$item['Description'],$item['PicUrl'],$item['Url']);
+		}
+
+		$toUsername = $postObj->ToUserName;
+		$fromUserName = $postObj->FromUserName;
+		$createTime = time();
+		$xmlTpl = "<xml>
+				<ToUserName><![CDATA[%s]]></ToUserName>
+				<FromUserName><![CDATA[%s]]></FromUserName>
+				<CreateTime>%s</CreateTime>
+				<MsgType><![CDATA[news]]></MsgType>
+				<ArticleCount>%s</ArticleCount>
+				<Articles>$item</Articles>
+				</xml> ";
+		$resultStr = sprintf($xmlTpl,$fromUserName,$toUsername,$createTime,count($newsArray));
+		echo $resultStr;
+	}
 
 	/**
 	 * 获取access_token
