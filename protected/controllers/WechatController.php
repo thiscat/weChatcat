@@ -50,7 +50,7 @@ class WechatController extends BaseController
 				$content = "本地信息";
 				break;
 			case "CLICK":
-				$content = "请输入关键词";
+                $content = $this->clickEvent($postObj->EventKey);
 				break;
 			case "location":
 				$content = $postObj->Label;
@@ -58,6 +58,16 @@ class WechatController extends BaseController
 		}
 		$this->transmitText($postObj, $content);
 	}
+
+    public function clickEvent($evenKey)
+    {
+        if(strstr($evenKey,"movie")){
+            $content = "http://m.kb20.cc/vod-show-id-1-p-1.html";
+        }else{
+            $content = "没有数据";
+        }
+        return $content;
+    }
 
 	public function actionMovie($keyword="功夫熊猫")
 	{
