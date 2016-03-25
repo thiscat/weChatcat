@@ -37,7 +37,7 @@ class WechatController extends Controller
 					break;
 			}
 		} else {
-			echo "没有接收到数据";
+			echo "";
 			exit;
 		}
 	}
@@ -136,7 +136,8 @@ class WechatController extends Controller
 		$keyword = trim($postObj->Content);
 		if($keyword){
 			//$content = "当前时间".date('Y-m-d H:i:s',time());
-			$content = $this->actionMovie($keyword);
+			//$content = $this->actionMovie($keyword);
+			$content = "\n\n回复<a href=\"http://www.baidu.com/\">百度</a>或回复“搜索” 了解详情\n其他文字";
 			$this->transmit($postObj,$content);
 		}
 	}
@@ -163,6 +164,31 @@ class WechatController extends Controller
 		$resultStr = sprintf($textTpl,$fromUserName,$toUsername,$createTime,$msgType,$content);
 		echo $resultStr;
 	}
+
+//	public function transmitImg()
+//	{
+//		$tpl = "<xml>
+//				<ToUserName><![CDATA[toUser]]></ToUserName>
+//				<FromUserName><![CDATA[fromUser]]></FromUserName>
+//				<CreateTime>12345678</CreateTime>
+//				<MsgType><![CDATA[news]]></MsgType>
+//				<ArticleCount>2</ArticleCount>
+//				<Articles>
+//				<item>
+//				<Title><![CDATA[title1]]></Title>
+//				<Description><![CDATA[description1]]></Description>
+//				<PicUrl><![CDATA[picurl]]></PicUrl>
+//				<Url><![CDATA[url]]></Url>
+//				</item>
+//				<item>
+//				<Title><![CDATA[title]]></Title>
+//				<Description><![CDATA[description]]></Description>
+//				<PicUrl><![CDATA[picurl]]></PicUrl>
+//				<Url><![CDATA[url]]></Url>
+//				</item>
+//				</Articles>
+//				</xml> ";
+//	}
 
 	/**
 	 * 获取access_token
