@@ -2,6 +2,9 @@
 
 class WechatController extends BaseController
 {
+    protected $appid = "wxf13635d0906784cc";
+    protected $appsecret = "3ea52e86c92d67a0968cd42b5067f596";
+
 	public function actionIndex()
 	{
 		if (isset($_GET["echostr"])) {
@@ -95,17 +98,6 @@ class WechatController extends BaseController
 		}
 	}
 
-    /**
-     * 获取微信授权链接
-     * @param $redirect_uri 回调地址
-     * @param null $state 可带自定义参数
-     */
-	public function actionAuth($redirect_uri,$state=null)
-	{
-        $redirect_uri = urlencode($redirect_uri);
-		$url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=$redirect_uri&response_type=code&scope=snsapi_userinfo&state=$state#wechat_redirect";
-        header("Location:".$url);
-	}
 
     /**
      * 获取用户信息
@@ -113,8 +105,11 @@ class WechatController extends BaseController
     public function actionGetUserInfo()
     {
         $oauthInfo = Yii::app()->session['Oauth'];
+        $file = 'Oauth.txt';
         if(empty($oauthInfo)){
-            $oauthInfo = json_decode(file_get_contents('Oauth.txt'));
+            if(file_exists($file)) {
+                $oauthInfo = json_decode(file_get_contents($file));
+            }
         }
 
         if(isset($oauthInfo) && time() > $oauthInfo['expires_in']){
@@ -124,7 +119,7 @@ class WechatController extends BaseController
             $redirect_uri = "http://cat-wechat.coding.io/wechat/oauth";
             $oauthInfo = $this->actionAuth($redirect_uri);//调用授权链接获取信息
             Yii::app()->session['Oauth'] = $oauthInfo;
-            file_put_contents('Oauth.txt',json_encode($oauthInfo));
+            file_put_contents($file,json_encode($oauthInfo));
 
             $access_token = $oauthInfo['access_token'];
             $openid = $oauthInfo['openid'];

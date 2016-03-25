@@ -20,10 +20,7 @@ class BaseController extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
-
-	protected $appid = "wxf13635d0906784cc";
-	protected $appsecret = "3ea52e86c92d67a0968cd42b5067f596";
-	protected $access_token;
+    protected $access_token;
 
 	public function beforeaction($action){
 		$this->getAccessToken();
@@ -90,14 +87,29 @@ class BaseController extends CController
 		echo $resultStr;
 	}
 
+    /**
+     * 获取微信授权链接
+     * @param $redirect_uri 回调地址
+     * @param null $state 可带自定义参数
+     */
+    public function actionAuth($redirect_uri,$state=null)
+    {
+        $redirect_uri = urlencode($redirect_uri);
+        $url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=$redirect_uri&response_type=code&scope=snsapi_userinfo&state=$state#wechat_redirect";
+        header("Location:".$url);
+    }
+
 	/**
 	 * 获取access_token
 	 */
 	public function getAccessToken()
 	{
 		$tokenArr = Yii::app()->session['tokenArr'];
+        $file = 'access_token.txt';
 		if(empty($tokenArr)){
-			$tokenArr = json_decode(file_get_contents('access_token.txt'),true);
+            if(file_exists($file)) {
+                $tokenArr = json_decode(file_get_contents($file), true);
+            }
 		}
 
 		if(!empty($tokenArr['access_token']) && time() < $tokenArr['expires_in']){
@@ -110,7 +122,7 @@ class BaseController extends CController
 			$tokenArr['expires_in'] = time() + 7200;
 
 			Yii::app()->session['tokenArr'] = $tokenArr;
-			file_put_contents('access_token.txt',json_encode($tokenArr));
+			file_put_contents($file,json_encode($tokenArr));
 		}
 	}
 
