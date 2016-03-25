@@ -134,10 +134,13 @@ class WechatController extends Controller
 	public function receiveText($postObj)
 	{
 		$keyword = trim($postObj->Content);
-		if($keyword){
+		if($keyword == "测试"){
 			//$content = "当前时间".date('Y-m-d H:i:s',time());
 			//$content = $this->actionMovie($keyword);
-			$content = "\n\n回复\n其他文字";
+			$content = "\n\n回复<a href=\"http://www.baidu.com/\">百度</a>或回复“搜索” 了解详情\n其他文字";
+			$this->transmit($postObj,$content);
+		}else{
+			$content = "\n\n回复“搜索” 了解详情\n其他文字";
 			$this->transmit($postObj,$content);
 		}
 	}
