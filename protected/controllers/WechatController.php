@@ -67,6 +67,64 @@ class WechatController extends BaseController
 		var_dump($showList[0]);
 	}
 
+	/**
+	 * 发送文本信息
+	 * @obj $postObj
+	 */
+	public function receiveText($postObj)
+	{
+		$keyword = trim($postObj->Content);
+		if(strstr($keyword,"电影")){
+			$content = "http://m.kb20.cc/vod-show-id-1-p-1.html";
+		}else if(strstr($keyword,"测试")){
+			$content = "\n\n回复“搜索” 了解详情\n其他文字";
+		}else{
+			$content = array();
+			$content[] = array( "Title"=>"单图文",
+								 "Description"=>"单图文内容",
+								 "PicUrl"=>"http://tu8.diediao.com/Uploads/vod/2015-03-07/54fadab893e69.jpg",
+								 "Url" =>"http://m.kb20.cc/Animation/gongfuxiongmiao3/");
+		}
+
+		if(is_array($content)){
+			if(isset($content[0][PicUrl])){
+				$this->transmitNews($postObj,$content);
+			}
+		}else{
+			$this->transmitText($postObj,$content);
+		}
+	}
+
+	public function actionAuth()
+	{
+		$url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=http://cat-wechat.coding.io/wechat/oauth&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect";
+		exit($url);
+		$this->curl_request($url);
+	}
+
+	//网页授权获取用户信息回调页面
+	public function actionOauth()
+	{
+		if (isset($_GET['code'])){
+			$getTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=$this->appid&secret=$this->appsecret&code={$_GET['code']}&grant_type=authorization_code";
+			$jsonObj = $this->curl_request($getTokenUrl);
+			$info = json_decode($jsonObj,true);
+			$access_token = $info['access_token'];
+			$openid = $info['openid'];
+			$info['expires_in'] = time() + 7200;
+
+			Yii::app()->session['Oauth'] = $info;
+			file_put_contents('Oauth.txt',json_encode($info));
+
+			$userInfoUrl = "https://api.weixin.qq.com/sns/userinfo?access_token=$access_token&openid=$openid&lang=zh_CN";
+			$result = $this->curl_request($userInfoUrl);
+			var_dump($result);
+		}else{
+			echo "NO CODE";
+		}
+	}
+
+	//创建自定义菜单
 	public function actionCreateMenu()
 	{
 		$jsonMenu = '{
@@ -116,43 +174,6 @@ class WechatController extends BaseController
 		$post_url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token={$this->access_token}";
 		$result = $this->curl_request($post_url,$jsonMenu);
 		var_dump($result);
-	}
-
-	/**
-	 * 发送文本信息
-	 * @obj $postObj
-	 */
-	public function receiveText($postObj)
-	{
-		$keyword = trim($postObj->Content);
-		if(strstr($keyword,"电影")){
-			$content = "http://m.kb20.cc/vod-show-id-1-p-1.html";
-		}else if(strstr($keyword,"测试")){
-			$content = "\n\n回复“搜索” 了解详情\n其他文字";
-		}else{
-			$content = array();
-			$content[] = array( "Title"=>"单图文",
-								 "Description"=>"单图文内容",
-								 "PicUrl"=>"http://tu8.diediao.com/Uploads/vod/2015-03-07/54fadab893e69.jpg",
-								 "Url" =>"http://m.kb20.cc/Animation/gongfuxiongmiao3/");
-		}
-
-		if(is_array($content)){
-			if(isset($content[0][PicUrl])){
-				$this->transmitNews($postObj,$content);
-			}
-		}else{
-			$this->transmitText($postObj,$content);
-		}
-	}
-
-	public function actionOauth()
-	{
-		if (isset($_GET['code'])){
-			echo $_GET['code'];
-		}else{
-			echo "NO CODE";
-		}
 	}
 
 	//微信基本配置验证
