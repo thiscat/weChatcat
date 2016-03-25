@@ -135,7 +135,7 @@ class WechatController extends Controller
 	{
 		$keyword = trim($postObj->Content);
 		if(strstr($keyword,"电影")){
-			$content = "http://diediao.com/movie/";
+			$content = "http://m.kb20.cc/vod-show-id-1-p-1.html";
 		}else if(strstr($keyword,"测试")){
 			$content = "\n\n回复“搜索” 了解详情\n其他文字";
 		}else{
@@ -143,7 +143,7 @@ class WechatController extends Controller
 			$content[] = array( "Title"=>"单图文",
 								 "Description"=>"单图文内容",
 								 "PicUrl"=>"http://tu8.diediao.com/Uploads/vod/2015-03-07/54fadab893e69.jpg",
-								 "Url" =>"http://www.diediao.com/Animation/gongfuxiongmiao3/");
+								 "Url" =>"http://m.kb20.cc/Animation/gongfuxiongmiao3/");
 		}
 
 		if(is_array($content)){
