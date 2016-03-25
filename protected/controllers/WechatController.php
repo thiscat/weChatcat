@@ -108,6 +108,8 @@ class WechatController extends BaseController
 		if (isset($_GET['code'])){
 			$getTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=$this->appid&secret=$this->appsecret&code={$_GET['code']}&grant_type=authorization_code";
 			$jsonObj = $this->curl_request($getTokenUrl);
+			echo $getTokenUrl;
+			var_dump($jsonObj);
 			$info = json_decode($jsonObj,true);
 			$access_token = $info['access_token'];
 			$openid = $info['openid'];
