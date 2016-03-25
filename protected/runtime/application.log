@@ -2244,3 +2244,17 @@ Stack trace:
 REQUEST_URI=/WeChat/assets/fonts/fontawesome-webfont.ttf?v=4.3.0
 HTTP_REFERER=http://localhost/WeChat/assets/css/main.css
 ---
+2016/03/25 08:08:09 [error] [exception.CException] exception 'CException' with message 'Property "WechatController.test" is not defined.' in C:\xampp\htdocs\WeChat\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\WeChat\protected\controllers\WechatController.php(16): CComponent->__get('test')
+#1 C:\xampp\htdocs\WeChat\framework\web\actions\CInlineAction.php(49): WechatController->actionTest()
+#2 C:\xampp\htdocs\WeChat\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\WeChat\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\WeChat\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php(282): CController->run('test')
+#6 C:\xampp\htdocs\WeChat\framework\web\CWebApplication.php(141): CWebApplication->runController('wechat/test')
+#7 C:\xampp\htdocs\WeChat\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\WeChat\index.php(10): CApplication->run()
+#9 {main}
+REQUEST_URI=/WeChat/wechat/test
+---
