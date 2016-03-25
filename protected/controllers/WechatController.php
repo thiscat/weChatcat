@@ -95,31 +95,56 @@ class WechatController extends BaseController
 		}
 	}
 
-	public function actionAuth()
+    /**
+     * 获取微信授权链接
+     * @param $redirect_uri 回调地址
+     * @param null $state 可带自定义参数
+     */
+	public function actionAuth($redirect_uri,$state=null)
 	{
-		$url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=http://cat-wechat.coding.io/wechat/oauth&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect";
-		$this->curl_request($url);
+        $redirect_uri = urlencode($redirect_uri);
+		$url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=$redirect_uri&response_type=code&scope=snsapi_userinfo&state=$state#wechat_redirect";
+        header("Location:".$url);
 	}
+
+    /**
+     * 获取用户信息
+     */
+    public function actionGetUserInfo()
+    {
+        $oauthInfo = Yii::app()->session['Oauth'];
+        if(empty($oauthInfo)){
+            $oauthInfo = json_decode(file_get_contents('Oauth.txt'));
+        }
+
+        if(isset($oauthInfo) && time() > $oauthInfo['expires_in']){
+            $access_token = $oauthInfo['access_token'];
+            $openid = $oauthInfo['openid'];
+        }else{
+            $redirect_uri = "http://cat-wechat.coding.io/wechat/oauth";
+            $oauthInfo = $this->actionAuth($redirect_uri);//调用授权链接获取信息
+            Yii::app()->session['Oauth'] = $oauthInfo;
+            file_put_contents('Oauth.txt',json_encode($oauthInfo));
+
+            $access_token = $oauthInfo['access_token'];
+            $openid = $oauthInfo['openid'];
+        }
+
+        $userInfoUrl = "https://api.weixin.qq.com/sns/userinfo?access_token=$access_token&openid=$openid&lang=zh_CN";
+        $result = $this->curl_request($userInfoUrl);
+        var_dump($result);
+    }
 
 	//网页授权获取用户信息回调页面
 	public function actionOauth()
 	{
 		if (isset($_GET['code'])){
-			file_put_contents('code.txt',"code".$_GET['code']);
 			$getTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=$this->appid&secret=$this->appsecret&code=".$_GET['code']."&grant_type=authorization_code";
 			$jsonObj = $this->curl_request($getTokenUrl);
 
-			$info = json_decode($jsonObj,true);
-			$access_token = $info['access_token'];
-			$openid = $info['openid'];
-			$info['expires_in'] = time() + 7200;
-
-			Yii::app()->session['Oauth'] = $info;
-			file_put_contents('Oauth.txt',json_encode($info));
-
-			$userInfoUrl = "https://api.weixin.qq.com/sns/userinfo?access_token=$access_token&openid=$openid&lang=zh_CN";
-			$result = $this->curl_request($userInfoUrl);
-			var_dump($result);
+            $oauthInfo = json_decode($jsonObj,true);
+            $oauthInfo['expires_in'] = time() + 7200;
+            return $oauthInfo;
 		}else{
 			echo "NO CODE";
 		}
