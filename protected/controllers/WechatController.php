@@ -106,22 +106,22 @@ class WechatController extends BaseController
 	{
 		if (isset($_GET['code'])){
 			file_put_contents('code.txt',"code".$_GET['code']);
-			$getTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=$this->appid&secret=$this->appsecret&code=".$_GET['code']."&grant_type=authorization_code";
-			echo $getTokenUrl."<br />";
-			$jsonObj = $this->curl_request($getTokenUrl);
-			var_dump($jsonObj);
-			echo "<br />";
-			$info = json_decode($jsonObj,true);
-			$access_token = $info['access_token'];
-			$openid = $info['openid'];
-			$info['expires_in'] = time() + 7200;
-
-			Yii::app()->session['Oauth'] = $info;
-			file_put_contents('Oauth.txt',json_encode($info));
-
-			$userInfoUrl = "https://api.weixin.qq.com/sns/userinfo?access_token=$access_token&openid=$openid&lang=zh_CN";
-			$result = $this->curl_request($userInfoUrl);
-			var_dump($result);
+//			$getTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=$this->appid&secret=$this->appsecret&code=".$_GET['code']."&grant_type=authorization_code";
+//			echo $getTokenUrl."<br />";
+//			$jsonObj = $this->curl_request($getTokenUrl);
+//			var_dump($jsonObj);
+//			echo "<br />";
+//			$info = json_decode($jsonObj,true);
+//			$access_token = $info['access_token'];
+//			$openid = $info['openid'];
+//			$info['expires_in'] = time() + 7200;
+//
+//			Yii::app()->session['Oauth'] = $info;
+//			file_put_contents('Oauth.txt',json_encode($info));
+//
+//			$userInfoUrl = "https://api.weixin.qq.com/sns/userinfo?access_token=$access_token&openid=$openid&lang=zh_CN";
+//			$result = $this->curl_request($userInfoUrl);
+//			var_dump($result);
 		}else{
 			echo "NO CODE";
 		}

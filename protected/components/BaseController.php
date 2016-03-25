@@ -22,7 +22,7 @@ class BaseController extends CController
 	public $breadcrumbs=array();
 
 	protected $appid = "wxf13635d0906784cc";
-	protected $appsecret = "3ea52e86c92d67a0968cd42b5067f596 ";
+	protected $appsecret = "3ea52e86c92d67a0968cd42b5067f596";
 	protected $access_token;
 
 	public function beforeaction($action){
