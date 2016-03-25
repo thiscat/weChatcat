@@ -98,7 +98,6 @@ class WechatController extends BaseController
 	public function actionAuth()
 	{
 		$url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=http://cat-wechat.coding.io/wechat/oauth&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect";
-		exit($url);
 		$this->curl_request($url);
 	}
 
@@ -106,10 +105,11 @@ class WechatController extends BaseController
 	public function actionOauth()
 	{
 		if (isset($_GET['code'])){
-			echo $_GET['code'];
-			$getTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=$this->appid&secret=$this->appsecret&code={$_GET['code']}&grant_type=authorization_code";
+			file_put_contents('Oauth.txt',$_GET['code']);
+			$getTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=$this->appid&secret=$this->appsecret&code=".$_GET['code']."&grant_type=authorization_code";
 			$jsonObj = $this->curl_request($getTokenUrl);
 			var_dump($jsonObj);
+			echo "<br />";
 			$info = json_decode($jsonObj,true);
 			$access_token = $info['access_token'];
 			$openid = $info['openid'];
