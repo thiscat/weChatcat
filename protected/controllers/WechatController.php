@@ -134,8 +134,8 @@ class WechatController extends Controller
 	public function receiveText($postObj)
 	{
 		$keyword = trim($postObj->Content);
-		if(strstr($keyword,"搜索")){
-			$content = '\n\n回复<a href=\"http://www.baidu.com/\">百度</a>或回复“搜索” 了解详情\n其他文字';
+		if(strstr($keyword,"电影")){
+			$content = "http://diediao.com/movie/";
 		}else if(strstr($keyword,"测试")){
 			$content = "\n\n回复“搜索” 了解详情\n其他文字";
 		}else{
@@ -185,7 +185,7 @@ class WechatController extends Controller
 	 */
 	public function transmitNews($postObj,$newsArray)
 	{
-		if(is_array($newsArray)){
+		if(!is_array($newsArray)){
 			return "";
 		}
 		$itemTpl = "    <item>
@@ -209,7 +209,7 @@ class WechatController extends Controller
 				<CreateTime>%s</CreateTime>
 				<MsgType><![CDATA[news]]></MsgType>
 				<ArticleCount>%s</ArticleCount>
-				<Articles>$item</Articles>
+				<Articles>$itemStr</Articles>
 				</xml> ";
 		$resultStr = sprintf($xmlTpl,$fromUserName,$toUsername,$createTime,count($newsArray));
 		echo $resultStr;
