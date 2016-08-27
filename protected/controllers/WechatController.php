@@ -44,10 +44,10 @@ class WechatController extends BaseController
 	{
 		switch ($postObj->Event) {
 			case "subscribe":
-				$content = "关注信息";
+				$content = "关注\r\n信息";
 				break;
 			case "LOCATION":
-				$content = "本地信息";
+				$content = "本地\r\n信息";
 				break;
 			case "CLICK":
                 $content = $this->clickEvent($postObj->EventKey);
